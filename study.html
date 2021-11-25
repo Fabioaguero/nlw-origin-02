@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="/styles/main.css">
+    <link rel="stylesheet" href="/styles/main.css"> 
     <link rel="stylesheet" href="/styles/partials/page-study.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +18,7 @@
 <body id="page-study">
 
     <div id="container">
-        <div class="page-header">
+        <header class="page-header">
 
             <div class="top-bar-container">
                 <a href="/">
@@ -48,9 +48,74 @@
                             <option value="11">Filosofia</option>
                         </select>
                     </div>
+
+                    <div class="select-block">
+                        <label for="weekday">Dia da semana</label>
+                        <select name="weekday" id="weekday">
+                            <option value="" disabled="" hidden="">Selecione uma opção</option>
+                            <option value="0">Domingo</option>
+                            <option value="1">Segunda-feira</option>
+                            <option value="2">Terça-feira</option>
+                            <option value="3">Quarta-feira</option>
+                            <option value="4">Quinta-feira</option>
+                            <option value="5">Sexta-feira</option>
+                            <option value="6">Sábado</option>
+                        </select>
+                    </div>
+
+                    <div class="input-block">
+                        <label for="time">Hora</label>
+                        <input type="time" name="time" id="time">
+                    </div>
+
+                    <button type="submit">Filtrar</button>
                 </form>
             </div>
-        </div>
+        </header>
+
+        <main>
+            <article class="teacher-item">
+                <header>
+                    <img src="https://avatars.githubusercontent.com/u/60341673?v=4" alt="Fabio aguero">
+                    <div>
+                        <strong>Fábio Aguero</strong>
+                        <span>Física</span>
+                    </div>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ullam error accusantium incidunt quis, 
+                   aspernatur veniam cupiditate dolorum dolore harum tempore doloremque sint dignissimos a ex, doloribus commodi. Perferendis, ab.Z
+                </p>
+                <footer>
+                    <p>Preço/Hora<strong>R$ 20,00</strong>
+                    </p>
+                    <button type="button">
+                        <img src="/images/icons/whatsapp.svg" alt="whatssap">
+                        Entrar em contato
+                    </button>
+                </footer>
+            </article>
+            
+            <article class="teacher-item"> 
+                <header>
+                    <img src="https://avatars.githubusercontent.com/u/60341673?v=4" alt="Fabio aguero">
+                    <div>
+                        <strong>Fábio Aguero</strong>
+                        <span>Física</span>
+                    </div>
+                </header>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ullam error accusantium incidunt quis, 
+                   aspernatur veniam cupiditate dolorum dolore harum tempore doloremque sint dignissimos a ex, doloribus commodi. Perferendis, ab.Z
+                </p>
+                <footer>
+                    <p>Preço/Hora<strong>R$ 20,00</strong>
+                    </p>
+                    <button type="button">
+                        <img src="/images/icons/whatsapp.svg" alt="whatssap">
+                        Entrar em contato
+                    </button>
+                </footer>
+            </article>
+        </main>
     </div>
 
 </body>

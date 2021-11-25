@@ -1,7 +1,7 @@
 # Aula 01 = ok
 
 
-# Aula 02 = 1:24:00
+# Aula 02 = ok
 
 
 # Aula 03 = 
