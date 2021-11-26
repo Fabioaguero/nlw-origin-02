@@ -4,7 +4,7 @@
 # Aula 02 = ok
 
 
-# Aula 03 = 
+# Aula 03 = 00:57:00 
 
 
 # Aula 04 = 
