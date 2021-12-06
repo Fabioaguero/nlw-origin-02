@@ -79,19 +79,20 @@
         </header>
 
         <main>
+            {%for proffy in proffys %}
             <article class="teacher-item">
                 <header>
-                    <img src="https://avatars.githubusercontent.com/u/60341673?v=4" alt="Fabio aguero">
+                    <img src="{{proffy.avatar}}" 
+                         alt="{{proffy.name}}">
                     <div>
-                        <strong>Fábio Aguero</strong>
-                        <span>Física</span>
+                        <strong>{{proffy.name}}</strong>
+                        <span>{{proffy.subject}}</span>
                     </div>
                 </header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ullam error accusantium incidunt quis, 
-                   aspernatur veniam cupiditate dolorum dolore harum tempore doloremque sint dignissimos a ex, doloribus commodi. Perferendis, ab.Z
+                <p>{{proffy.bio}}
                 </p>
                 <footer>
-                    <p>Preço/Hora<strong>R$ 20,00</strong>
+                    <p>Preço/Hora<strong>R$ {{proffy.cost}}</strong>
                     </p>
                     <button type="button">
                         <img src="/images/icons/whatsapp.svg" alt="whatssap">
@@ -99,27 +100,8 @@
                     </button>
                 </footer>
             </article>
-            
-            <article class="teacher-item"> 
-                <header>
-                    <img src="https://avatars.githubusercontent.com/u/60341673?v=4" alt="Fabio aguero">
-                    <div>
-                        <strong>Fábio Aguero</strong>
-                        <span>Física</span>
-                    </div>
-                </header>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ullam error accusantium incidunt quis, 
-                   aspernatur veniam cupiditate dolorum dolore harum tempore doloremque sint dignissimos a ex, doloribus commodi. Perferendis, ab.Z
-                </p>
-                <footer>
-                    <p>Preço/Hora<strong>R$ 20,00</strong>
-                    </p>
-                    <button type="button">
-                        <img src="/images/icons/whatsapp.svg" alt="whatssap">
-                        Entrar em contato
-                    </button>
-                </footer>
-            </article>
+            {%endfor%}
+           
         </main>
     </div>
 
