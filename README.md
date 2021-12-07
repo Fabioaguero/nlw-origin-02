@@ -7,7 +7,7 @@
 # Aula 03 = ok
 
 
-# Aula 04 = 01:16:00
+# Aula 04 = ok
 
 
-# Aula 05 = 
+# Aula 05 = 00
